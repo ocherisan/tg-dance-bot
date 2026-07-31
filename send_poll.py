@@ -14,7 +14,7 @@ async def send_poll():
     raise ValueError("Не все переменные окружения заданы")
 
   bot = Bot(token=token)
-  await bot(SendPoll(chat_id=chat_id, question=question, options=options, is_anonymmous=True, type="regular"))
+  await bot(SendPoll(chat_id=chat_id, question=question, options=options, is_anonymmous=False, type="regular"))
   await bot.session.close()
 
 if __name__ == "__main__":
