@@ -2,9 +2,10 @@ name: Send Weekly Poll
 
 on:
   schedule:
-    - cron: '55 20 * * *'
+    - cron: '12 21 * * *'
     - cron: '0 6 * * 2'
     - cron: '0 6 * * 5'
+  workflow_dispatch:
 
 jobs:
   send-poll:
