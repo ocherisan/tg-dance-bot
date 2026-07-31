@@ -1,7 +1,7 @@
 import asyncio
 import os
-from aiogramm import Bot
-from aiogramm.methods import SendPoll
+from aiogram import Bot
+from aiogram.methods import SendPoll
 
 async def send_poll():
   token = os.getenv("BOT_TOKEN")
