@@ -1,9 +1,6 @@
 name: Send Weekly Poll
 
 on:
-  schedule:
-    - cron: '0 1 * * 2'
-    - cron: '0 1 * * 5'
   workflow_dispatch:
 
 jobs:
